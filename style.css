@@ -532,7 +532,7 @@ font-size: 0.9rem;
 
 
 @media(max-width: 500px){
-  html {
+  html{
     max-width: 100%;
     overflow-x: hidden;
 }
