@@ -535,8 +535,11 @@ font-size: 0.9rem;
   html{
     max-width: 100%;
     overflow-x: hidden;
+} 
+ body{
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
   .hero-section h1 {
     font-size: 3.5rem;
     padding: 20px;
