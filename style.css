@@ -535,10 +535,14 @@ font-size: 0.9rem;
   html{
     max-width: 100%;
     overflow-x: hidden;
+    width:100vw;
+    overflow-x: scroll;
 } 
  body{
   max-width: 100%;
   overflow-x: hidden;
+  width:100vw;
+  overflow-x: scroll;
 }
   .hero-section h1 {
     font-size: 3.5rem;
