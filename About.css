@@ -19,4 +19,8 @@
     font-size: 1.3rem;
     color: rgb(2, 238, 255);
   }
- 
+  @media(max-width: 650px){
+   body{
+    height: 100vh;
+   }
+}

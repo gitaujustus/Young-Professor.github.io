@@ -149,3 +149,12 @@ margin-top: -10px;
     background-color: rgb(75, 75, 156);
 
 }
+
+@media(max-width: 650px){
+    .proceedRoom{
+        width: 85%;
+    }
+    .BookingRecived{
+        width: 80%;
+    }
+}
