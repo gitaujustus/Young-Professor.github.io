@@ -135,7 +135,22 @@ p{
 color: #000;
 }
 
-@media (max-width=500px){
-
-    
+@media only screen and (max-width: 420px) {
+    #RecreationTitle{
+        font-size: 2.5rem;
+    }
+    .allboxes{
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+        margin-left: 10px;
+    }
+    .allboxes div{
+        width: 90%;
+        height: 250px;
+        margin-top: 20px;
+ 
+    }
+    .allboxes div p{
+        font-size: 0.8rem;
+    }
 }

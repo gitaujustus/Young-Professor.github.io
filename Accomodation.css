@@ -73,20 +73,7 @@ margin-top: -10px;
 #ComfortRoom h4{
  margin-bottom: 5px;
 }
-@media(max-width: 550px){
-    #ComfortRoom{
-        display: block;
-        padding: 10px;
-    }
-    #ComfortRoom p{
-        margin: 10px;
 
-    }
-    #checkinDates{
-        display: none;
-    }
-
-}
 .proceedRoom{
     width: 30%;
     height: 65%;
@@ -151,10 +138,26 @@ margin-top: -10px;
 }
 
 @media(max-width: 650px){
+    
     .proceedRoom{
-        width: 50%;
+        width: 80%;
     }
     .BookingRecived{
         width: 80%;
+    }
+    #CheckOutdate{
+        margin-left: 20px;
+    }
+    #ComfortRoom{
+        display: block;
+        padding: 10px;
+        margin-left: 50px;
+    }
+    #ComfortRoom p{
+        margin: 10px;
+
+    }
+    #checkinDates{
+        display: none;
     }
 }

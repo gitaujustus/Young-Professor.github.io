@@ -120,6 +120,23 @@ body{
     height: 30px;
 }
 
+
+.proceedRoom{
+    width: 30%;
+    height: 65%;
+    background: rgb(219, 174, 212);
+    margin: auto;
+    padding: 20px;
+}
+.proceedRoom::backdrop{
+    background: black;
+    opacity: .7;
+}
+.proceedRoom h1{
+text-align: center;
+background-color: rgb(60, 91, 158);
+color: white;
+}
 @media only screen and (max-width: 420px) {
    .all{
     width: 95%;
@@ -127,6 +144,9 @@ body{
     .row{
         display: block;
         
+    }
+    .proceedRoom{
+        width: 80%;
     }
     /* .row div div{
         height: auto;
@@ -145,21 +165,4 @@ body{
         height: 45%;
         overflow-x: scroll;
     }
-}
-
-.proceedRoom{
-    width: 30%;
-    height: 65%;
-    background: rgb(219, 174, 212);
-    margin: auto;
-    padding: 20px;
-}
-.proceedRoom::backdrop{
-    background: black;
-    opacity: .7;
-}
-.proceedRoom h1{
-text-align: center;
-background-color: rgb(60, 91, 158);
-color: white;
 }
