@@ -2,10 +2,12 @@
 function ShowMenu(){
   let navState=document.getElementById("navlinks");
   navState.style.right="0"
+  navState.style.display= "block"
 }
 function HideMenu(){
   let navState=document.getElementById("navlinks");
-  navState.style.right="-300px"
+  navState.style.right="0"
+  navState.style.display= "none"
   navState.classList.toggle("hide")
 }
 var state= true;

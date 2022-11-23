@@ -1,11 +1,15 @@
 html{
-  height: 100vh;
+  
+}
+body{
+
+
 }
 .About {
     padding-top: 10px;
     text-align: center;
     color: white;
-    height:auto;
+    height:88vh;
     background-image: url("photos/hotelB.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,20 +25,10 @@ html{
     font-size: 1.3rem;
     color: rgb(2, 238, 255);
   }
-  #copyright{
-    color: rgb(255, 255, 255);
-  }
   @media(max-width: 650px){
-    .About h1 {
-      font-size: 2.0rem;
-    }
-    .About h2 {
-      color: rgb(255, 255, 255);
-      font-size: 1.5rem;
-    }
-    
-    body{
-      height: fit-content;
-    }
-
+   body{
+      height: 10vh;
+      overflow-y: hidden;
+      /* display: none; */
+   }
   }
