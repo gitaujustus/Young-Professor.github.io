@@ -152,7 +152,7 @@ margin-top: -10px;
 
 @media(max-width: 650px){
     .proceedRoom{
-        width: 85%;
+        width: 50%;
     }
     .BookingRecived{
         width: 80%;
