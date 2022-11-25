@@ -155,7 +155,7 @@
     background: black;
     opacity: .7;
 }
-@media(max-width: 650px){
+@media((max-width: 450px)){
   #order_table {
     height: 600px;
     width: 80%;

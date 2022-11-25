@@ -19,7 +19,7 @@
     font-size: 1.3rem;
     color: rgb(2, 238, 255);
   }
-  @media(max-width: 650px){
+  @media((max-width: 550px)){
     .About h1 {
       font-size: 2.5rem;
     }

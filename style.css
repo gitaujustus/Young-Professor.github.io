@@ -58,6 +58,11 @@ nav a:hover {
   color: rgb(255, 198, 9);
   margin-right: 35px;
 }
+#signinLink{
+background-color: green;
+padding: 10px;
+border-radius: 10px;
+}
 nav #logo {
   padding: 0px;
   margin-left: -30px;
@@ -68,6 +73,11 @@ nav #logo {
   display: flex;
   align-items: center;
 }
+
+  .navlinks li a span{
+    height: 0px;
+    transform: translateY(-13px);
+    }
 .navlinks li {
   /* position: relative; */
   list-style: none;
@@ -517,10 +527,22 @@ color: #000;
 }
 /* .................Media screens.................................. */
 
+@media(max-width: 1200px)and (min-width: 850px){
+  .navlinks{
+    font-size: 1rem;
+    
+}
+.navlinks li a{
+  width: 20px;
+  padding: 10px;
+}
+.navlinks li a span{
+  margin: 0 -5px;
+}
+}
 
 
-
-@media(max-width: 820px)and (min-width: 650px) {
+@media(max-width: 850px)and (min-width: 550px) {
   .hero-section h1 {
     font-size: 4.5rem;
     padding: 20px;
@@ -540,12 +562,18 @@ color: #000;
   nav {
     font-size: 0.8rem;
   }
+  .navlinks{
+    font-size: 0.2rem;
+}
  .navlinks li a{
   width: 45px;
-  padding: 25px;
-  font-size: 1rem;
+  margin: 0 10px;
+  padding: 0px;
+  font-size: 0.8rem;
 }
-
+.navlinks li a span{
+  margin: 0 -5px;
+}
 .rev{
   display: grid;
   grid-template-columns: repeat(2,2fr);
@@ -601,6 +629,41 @@ font-size: 0.9rem;
 
 }
 
+@media(max-width: 700px)and (min-width: 550px){
+  nav {
+    font-size: 0.7rem;
+    /* margin: 0 -5px; */
+  }
+  .navlinks{
+    font-size: 0.2rem;
+}
+#signinLink{
+  background-color: green;
+  padding: 0px;
+  }
+  .book span{
+    display: flex;
+    justify-content: space-between;
+    overflow:scroll;
+ }
+ .navlinks li a{
+  /* background-color: rgb(65, 52, 52); */
+  width: 45px;
+  margin: 0 6px;
+  padding: 0px;
+  font-size: 0.8rem;
+}
+.navlinks li a span{
+  margin: 0 -2px;
+}
+#follow_us_Tag{
+  margin-left: -70px;
+  width: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+}
 
 
 
@@ -608,8 +671,7 @@ font-size: 0.9rem;
 
 
 
-
-@media(max-width: 650px){
+@media((max-width: 550px)){
   .hero-section h1 {
     font-size: 3.0rem;
     padding: 20px;
