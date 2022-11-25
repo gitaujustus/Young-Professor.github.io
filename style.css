@@ -672,7 +672,7 @@ body{
 
 
 @media((max-width: 550px)){
-  body{
+  html{
     overflow-x: hidden;
   }
   .hero-section h1 {
