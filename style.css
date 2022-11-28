@@ -5,9 +5,9 @@
   font-family: "Poppins", sans-serif;
   /* overflow-x: hidden; */
 }
-/* #sign_in{
-  visibility: hidden;
-} */
+body{
+  overflow-x: hidden;
+}
 /* global styles */
 a {
   text-decoration: none;
@@ -101,7 +101,7 @@ nav ul li:hover ul {
   display: block;
 }
 /* .....................End of nav area style........... */
-.welcome {
+/* .AreaCoveringTheScreen {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,7 @@ nav ul li:hover ul {
   margin-right: 20px;
   padding: 10px;
   border-radius: 10px;
-}
+} */
 
 /* ......................Area that covers the screen height style.............................. */
 .AreaCoveringTheScreen {
@@ -126,6 +126,7 @@ nav ul li:hover ul {
   text-align: center;
   color: rgb(255, 255, 255);
   height: calc(100vh - 80px);
+  width: 100%;
   background-image: url("photos/hotelB.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -527,7 +528,7 @@ color: #000;
 }
 /* .................Media screens.................................. */
 
-@media(max-width: 1200px)and (min-width: 850px){
+/* @media(max-width: 1200px)and (min-width: 850px){
   .navlinks{
     font-size: 1rem;
     
@@ -539,10 +540,11 @@ color: #000;
 .navlinks li a span{
   margin: 0 -5px;
 }
-}
+
+}  */
 
 
-@media(max-width: 850px)and (min-width: 550px) {
+/* @media(max-width: 850px)and (min-width: 550px) {
   .hero-section h1 {
     font-size: 4.5rem;
     padding: 20px;
@@ -632,7 +634,6 @@ font-size: 0.9rem;
 @media(max-width: 700px)and (min-width: 550px){
   nav {
     font-size: 0.7rem;
-    /* margin: 0 -5px; */
   }
   .navlinks{
     font-size: 0.2rem;
@@ -647,7 +648,7 @@ font-size: 0.9rem;
     overflow:scroll;
  }
  .navlinks li a{
-  /* background-color: rgb(65, 52, 52); */
+ 
   width: 45px;
   margin: 0 6px;
   padding: 0px;
@@ -660,19 +661,12 @@ font-size: 0.9rem;
   margin-left: -70px;
   width: 100%;
 }
-body{
-  overflow-x: hidden;
-}
-}
+} */
 
+ @media((max-width: 550px)){
 
-
-
-
-
-
-@media((max-width: 550px)){
- body{
+  body{
+    width: 100vw;
     overflow-x: hidden;
   }
   .hero-section h1 {
@@ -698,17 +692,16 @@ body{
   }
   nav {
     display:block;
-
   }
   .home_route{
     display: block;
-    padding: 0;
+    padding: 0; 
     margin-left: 10px;
   }
   .facility{
     display: grid;
     grid-template-columns: repeat(3,3fr);
-    /* height: auto; */
+
   }
   #SpanFornavTab{
     display:none;
@@ -716,7 +709,7 @@ body{
   #SpanForServices{
     display:inline-block;
     margin-left: 10px;
-    /* height: 10px; */
+   
   }
  
   .navlinks li svg{
@@ -749,7 +742,7 @@ body{
     top: 0;
     right: 0;
     z-index: 2 ;
-    transition: 1s;
+    /* transition: 3s; */
   }
   #facilityIcons svg{
     height: 20px;
