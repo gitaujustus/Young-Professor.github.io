@@ -647,6 +647,9 @@ font-size: 0.9rem;
     justify-content: space-between;
     overflow:scroll;
  }
+ #booking{
+  display: none;
+ }
  .navlinks li a{
  
   width: 45px;
