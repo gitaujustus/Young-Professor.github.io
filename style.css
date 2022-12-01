@@ -550,9 +550,6 @@ color: #000;
     padding: 20px;
     box-shadow: none;
   }
-  #booking{
-    display: none;
-    }
   .hero-section p {
     font-size: 1.1rem;
     padding: 20px;
@@ -650,9 +647,6 @@ font-size: 0.9rem;
     justify-content: space-between;
     overflow:scroll;
  }
- #booking{
-  display: none;
-  }
  .navlinks li a{
  
   width: 45px;
