@@ -179,14 +179,14 @@ app.post("/book", (req, res) => {
       else console.log(result);
     }
   );
-// axios.post(' https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query',
-// {
-//   "BusinessShortCode": "174379",
-//   "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTkwOTIzMDc0MTIw",
-//   "Timestamp": "20190923074120",
-//   "CheckoutRequestID": "ws_CO_260520211133524545"
-//   }
-// )
+axios.post(' https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query',
+{
+  "BusinessShortCode": "174379",
+  "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTkwOTIzMDc0MTIw",
+  "Timestamp": "20190923074120",
+  "CheckoutRequestID": "ws_CO_260520211133524545"
+  }
+)
 });
 //-----------------------------------------------------
 

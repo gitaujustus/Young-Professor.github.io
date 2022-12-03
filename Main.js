@@ -257,7 +257,7 @@ function MoreServices(){
               else{
               if(window.confirm("Are you sure you want to delete?")){
                 document.getElementById("order_table").getElementsByTagName("section")[0].innerHTML = " ";
-                document.getElementById("totology").innerHTML=" ";
+                document.getElementById("totology").innerHTML="";
                 total1=0;
               }
               else{

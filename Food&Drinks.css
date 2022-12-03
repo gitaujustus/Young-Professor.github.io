@@ -5,15 +5,34 @@
     grid-template-columns: repeat(2,1fr);
   }
 }
-.order_class {
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  color: white;
+  height: calc(100vh - 180px);
+  background-image: url("photos/hotelB.jpg");
+  background-size:cover;
+  background-repeat: repeat;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* .order_class {
     padding-top: 10px;
     color: white;
     height: calc(100vh - 80px);
     background-image: url("photos/ForContact.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
-
+  } */
+#CartArea{
+  display: block;
+  height: 30px;
+}
   #order_table {
     margin: auto;
     background: rgb(226, 226, 226);
@@ -31,6 +50,7 @@
     margin: auto;
     width: auto;
   }
+ 
   .FoodMenuHeader {
     margin-top: 20px;
     text-align: center;
@@ -52,10 +72,12 @@
     margin-left: 23%;
   }
   #order_table section {
-    background: rgb(141, 126, 106);
+    background: rgb(94, 167, 226);
     height: 300px;
     max-width: 600px;
     overflow: scroll;
+    color: rgb(0, 0, 0);
+    padding: 10px;
   }
 
  
@@ -76,9 +98,12 @@
     margin-right: 15%;
   }
   .cart {
-    float:right;
-    position:sticky;
-    top: 0;
+    padding: 5px;
+    background-color: yellowgreen;
+    border-radius: 5%;
+   float:right;
+   position:sticky;
+   top: 0;
    color: rgb(0, 0, 0);
    transition: 720ms ease;
   }
@@ -102,7 +127,7 @@
     margin-bottom: 50px;
     margin-top: 15px;
     margin-left: 20px;
-    margin-right: 70px;
+    margin-right: 50px;
   }
   .myTables div{
     padding: 10px;
@@ -111,9 +136,7 @@
  .TableHeaders{
   width: auto;
   padding: 10px;
-  /* margin: ; */
-  /* max-height: 100px;
-  min-width: 100px; */
+
  }
   .snacks button {
     color: rgb(47, 0, 255);
@@ -125,12 +148,7 @@
     color: rgb(0, 0, 0);
     background: rgb(252, 90, 90);
   }
-  @media(max-width: 520px){
 
-    .myTables {
-      grid-template-columns: repeat(1,1fr);
-    }
-  }
 
   .proceedFood{
     width: 30%;
@@ -156,9 +174,27 @@
     opacity: .7;
 }
 @media((max-width: 450px)){
+  .myTables {
+    grid-template-columns: repeat(1,1fr);
+    margin: auto;
+  }
   #order_table {
     height: 600px;
     width: 80%;
+  }
+  #order_table h3 {
+    color: rgb(34, 36, 170);
+    margin-left: 2%;
+  }
+  .cart {
+    padding: 2px;
+    margin-right: -1px;
+    background-color: yellowgreen;
+   float:right;
+   position:sticky;
+   top: 0;
+   color: rgb(0, 0, 0);
+   transition: 720ms ease;
   }
   .proceedFood{
     width: 70%;

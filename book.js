@@ -166,7 +166,7 @@ const Send = document.querySelector("#Send");
 Send.addEventListener("click", () => {
     const Acc = document.querySelector("#AccountN").value;
     const checkiIn = document.querySelector("#CheckIndate").value;
-    const checkiOut= document.querySelector("#CheckOutdate").value;
+    const checkiOut= document.querySelector("#CheckOutdatee").value;
     const roomName= document.querySelector("#RoomName").textContent;
     
   // Checking whether user has loged in and whether he has all inputs
@@ -181,7 +181,7 @@ Send.addEventListener("click", () => {
     alert("Enter Dates")
       }
   else{ 
-    const bookData={CUSTID:customerID,CHECK_IN:checkiIn,CHECK_OUT:checkiOut,ACCOUNT:Acc,ROOM_NAME:roomName}
+    const bookData={CUSTID:customerID, CHECK_OUT:checkiOut, CHECK_IN:checkiIn, ACCOUNT:Acc, ROOM_NAME:roomName}
     fetch('http://localhost:3000/book',{
       body:JSON.stringify(bookData),
       method:'POST',

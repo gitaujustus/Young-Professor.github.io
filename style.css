@@ -101,22 +101,6 @@ nav ul li:hover ul {
   display: block;
 }
 /* .....................End of nav area style........... */
-/* .AreaCoveringTheScreen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  color: white;
-  height: calc(100vh - 180px);
-  background-image: url("photos/hotelB.jpg");
-  background-size:cover;
-  background-repeat: repeat;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 10px;
-  border-radius: 10px;
-} */
 
 /* ......................Area that covers the screen height style.............................. */
 .AreaCoveringTheScreen {
@@ -341,11 +325,13 @@ border-style:inset;
   text-align: center;
 }
 .CommentMap{
+background-color: rgb(17, 2, 2);
 display: flex;
 justify-content: space-between;
 height: auto;
 background-color: rgb(255, 255, 255);
 width: 100%;
+
 }
 
 #mapArea{
@@ -367,9 +353,11 @@ width: 45%;
   height: 150px;
   width: 80%;
   font-size: 16px;
+  /* background-color: #fff; */
+  /* margin-top: 10px; */
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 .form-label{
@@ -711,7 +699,8 @@ font-size: 0.9rem;
   }
   #SpanForServices{
     display:inline-block;
-    margin-left: 10px;
+    margin-left: 5px;
+    transform: translateY(3px);
   }
   #booking{
     display: none;
@@ -779,32 +768,32 @@ font-size: 0.9rem;
   height: 50px;
 }
 .FeedBackSection{
+  height: 240px;
   padding: 10px;
 }
 #LeavingFeedBack{
   height: 80px;
   padding: 5px;
   font-size: 0.8rem;
+  background-color: #fff;
 }
-#MAP{
-  height: 180px;
-  margin-left: -10px;
-  width: 170px;
-}
+
 .Bottom {
   display: block;
   overflow: hidden;
 }
 .FeedBackSection{
+  margin: auto;
   font-size: 0.7rem;
 }
 #feedBack button{
 margin-left: 20%;
 }
-iframe{
-  margin-top: 100px;
-  height: 150px;
-  width: 150px;
+#MAP{
+  height: 230px;
+  margin-top: 20px;
+  margin-left: -10px;
+  width: 170px;
 }
 #indexAbout{
  margin-top: 30px;

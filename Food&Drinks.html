@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Orders.html" />
     <link rel="stylesheet" href="Food&Drinks.css">
     <script language="javascript" type="text/javascript" src="Main.js"></script>
   </head>
@@ -688,7 +687,7 @@
         <h2>Bar and Restaurant payment form</h2>
         <br>
         <h3 id="RoomName">Total ksh.</h3>
-        <h3 id="price">$23.00</h3>
+        <h3 id="price" style="color: rgb(24, 83, 24);">$23.00</h3>
         <br>
         <label for="payment"><b>Select payment</b></label>
         <br>
@@ -715,6 +714,7 @@
       const modal=document.querySelector("#order_table")
       const sumbitOrders= document.querySelector(".sumbitOrders")
       const proceedFood=document.querySelector(".proceedFood")
+      const ConfirmSubmission=document.querySelector("#Send")
 
       
       
@@ -727,12 +727,20 @@
       })  
       
       sumbitOrders.addEventListener('click',()=>{
+        
         const price=document.querySelector("#totology").textContent;
-        document.querySelector("#price").innerHTML=price;
-        // alert(price)
-        // modal.close();
+        document.querySelector("#price").innerHTML=price.slice(32,36);
+        if(price=='No item added yet' || price==""){
+          alert("Select items firts")
+        }
+        else {
         proceedFood.showModal();
+        }
       }) 
+      ConfirmSubmission.addEventListener('click',()=>{
+        modal.close();
+        proceedFood.close();
+      })
     </script>
 
 
