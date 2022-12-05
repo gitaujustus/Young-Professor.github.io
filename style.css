@@ -111,10 +111,29 @@ nav ul li:hover ul {
   color: rgb(255, 255, 255);
   height: calc(100vh - 80px);
   width: 100%;
-  background-image: url("photos/hotelB.jpg");
+  background-image: url("photos/Background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  animation: change 25s infinite ease-out ;
 }
+@keyframes change{
+  0%{
+    background-image: url("photos/Background1.jpg");
+  }
+  20%{
+    background-image: url("photos/Background3.jpg");
+  }
+  50%{
+    background-image: url("photos/Background4.jpg");
+  }
+  80%{
+    background-image: url("photos/Background5.jpg");
+    }
+  100%{
+  background-image: url("photos/Background1.jpg");
+  }
+}
+
 .AreaCoveringTheScreen h1 {
   font-size: 5.5rem;
   text-shadow: 0px 0px 5px rgb(0, 106, 245), 0px 5px 5px rgb(173, 0, 0);
