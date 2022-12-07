@@ -8,6 +8,43 @@
 body{
   overflow-x: hidden;
 }
+
+/* Loader area */
+.loader{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(206, 198, 198);
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+.loader::after{
+  content: "";
+  width: 65px;
+  height: 65px;
+  border: 10px solid #ffffff;
+  border-top-color: rgb(79, 40, 219);
+  animation: loading 0.75s ease infinite;
+  border-radius: 50%;
+}
+@keyframes loading {
+  from{
+      transform: rotate(0turn);
+  }
+  to{
+      transform: rotate(1turn);
+  }
+}
+
+/* ---------------- */
 /* global styles */
 a {
   text-decoration: none;
@@ -295,8 +332,6 @@ border-style:inset;
 #bookinRoom{
   padding: 6px;
 }
-
-/* .........................@small Screens................... */
 
 /* ..................................End of Display services..................... */
 #review{

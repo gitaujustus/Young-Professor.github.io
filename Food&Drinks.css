@@ -21,6 +21,9 @@
   padding: 10px;
   border-radius: 10px;
 }
+.welcome h2{
+  /* font-family: 'Trebuchet MS'; */
+}
 /* .order_class {
     padding-top: 10px;
     color: white;
@@ -101,6 +104,8 @@
     padding: 5px;
     background-color: yellowgreen;
     border-radius: 5%;
+    margin-left: -30px;
+    margin-right: -3px;
    float:right;
    position:sticky;
    top: 0;
@@ -173,7 +178,7 @@
     background: black;
     opacity: .7;
 }
-@media((max-width: 450px)){
+@media((max-width: 550px)){
   .myTables {
     grid-template-columns: repeat(1,1fr);
     margin: auto;
@@ -189,6 +194,8 @@
   .cart {
     padding: 2px;
     margin-right: -1px;
+    margin-left: -20px;
+    margin-left: -20px;
     background-color: yellowgreen;
    float:right;
    position:sticky;

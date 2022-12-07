@@ -1,3 +1,14 @@
+// Loader phase
+window.addEventListener("load",()=>{
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden"); 
+  
+  loader.addEventListener("transitionend",()=>{
+      document.body.removeChild("loader");
+  })
+})
+
 
 function ShowMenu(){
   let navState=document.getElementById("navlinks");
